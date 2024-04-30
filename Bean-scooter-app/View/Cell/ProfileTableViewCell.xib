@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileList" id="KGk-i7-Jjw" customClass="ProfileTableViewCell" customModule="Bean_scooter_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주행 가이드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myj-I9-IXm">
+                        <rect key="frame" x="75" y="12" width="78" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scooter" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mhe-eD-UXQ">
+                        <rect key="frame" x="25" y="10.999999999999996" width="25" height="23.333333333333332"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="25" id="06A-Eq-qxc"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="6zr-xA-2A0"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Ogv-Le-Wew"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="smc-Zj-R1a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khE-kg-1GK">
+                        <rect key="frame" x="356.33333333333331" y="12" width="14.666666666666686" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="myj-I9-IXm" firstAttribute="leading" secondItem="Mhe-eD-UXQ" secondAttribute="trailing" constant="25" id="3QR-Ss-edc"/>
+                    <constraint firstItem="Mhe-eD-UXQ" firstAttribute="centerY" secondItem="myj-I9-IXm" secondAttribute="centerY" id="6Vj-d9-dYr"/>
+                    <constraint firstItem="myj-I9-IXm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="7B9-t3-FT8"/>
+                    <constraint firstAttribute="bottom" secondItem="khE-kg-1GK" secondAttribute="bottom" constant="11" id="Lni-eu-MlU"/>
+                    <constraint firstItem="Mhe-eD-UXQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="SdM-JV-py7"/>
+                    <constraint firstItem="khE-kg-1GK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Upa-Te-YUu"/>
+                    <constraint firstAttribute="trailing" secondItem="khE-kg-1GK" secondAttribute="trailing" constant="20" id="mVt-KK-tOy"/>
+                    <constraint firstAttribute="bottom" secondItem="myj-I9-IXm" secondAttribute="bottom" constant="11" id="zeq-xS-mo4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowLabel" destination="khE-kg-1GK" id="7be-Ij-xn8"/>
+                <outlet property="iconImageView" destination="Mhe-eD-UXQ" id="ruO-ca-Vfr"/>
+                <outlet property="titleLabel" destination="myj-I9-IXm" id="4L8-3P-KWN"/>
+            </connections>
+            <point key="canvasLocation" x="183.96946564885496" y="-11.267605633802818"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="scooter" catalog="system" width="128" height="94"/>
+    </resources>
+</document>
